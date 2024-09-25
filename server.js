@@ -11,7 +11,7 @@ const cors = require('cors');
 connectDatabase();
 app.use(express.json());
 app.use(cors({
-    origin:"https://clever-capybara-b585a7.netlify.app/",
+    origin:"*",
     credential:true,
     
 }));
