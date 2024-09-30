@@ -133,7 +133,7 @@ sendToken(user, 200, res);
   })
 
   //get user profile//
-  exports.getUserProfile = catchAsyncError(async (req, res, next) => {
+  exports.getUserProfile =(async (req, res, next) => {
     const user = await User.findById(req.user.id);
     res.status(200).json({
       success: true,

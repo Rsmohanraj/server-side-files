@@ -11,8 +11,9 @@ const cors = require('cors');
 connectDatabase();
 app.use(express.json());
 app.use(cors({
-    origin:"https://server-side-files.onrender.com",
-    credential:true,
+    origin:"*",
+    withCredentials:true,
+    cookie:{secure:false}
     
 }));
 
