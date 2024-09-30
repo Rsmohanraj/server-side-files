@@ -11,7 +11,7 @@ const cors = require('cors');
 connectDatabase();
 app.use(express.json());
 app.use(cors({
-    origin:"*",
+    origin:"https://guileless-zabaione-bb6bc5.netlify.app",
     withCredentials:true,
     cookie:{secure:false}
     
